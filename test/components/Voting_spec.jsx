@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {List} from 'immutable';
-import Voting from '../../src/components/Voting.jsx';
+import {Voting} from '../../src/components/Voting.jsx';
 import {expect} from 'chai';
 
 import {renderIntoDocument, scryRenderedDOMComponentsWithTag, Simulate} from 'react-addons-test-utils';

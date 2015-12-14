@@ -4,7 +4,7 @@ import {renderIntoDocument, scryRenderedDOMComponentsWithClass, Simulate} from '
 
 import {List, Map} from 'immutable';
 
-import Results from '../../src/components/Results.jsx';
+import {Results} from '../../src/components/Results.jsx';
 
 import {expect} from 'chai';
 
