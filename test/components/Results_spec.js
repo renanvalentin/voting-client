@@ -1,14 +1,30 @@
+//import jsdom from 'jsdom';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {renderIntoDocument, scryRenderedDOMComponentsWithClass, Simulate} from 'react-addons-test-utils';
 
 import {List, Map} from 'immutable';
 
-import {Results} from '../../src/components/Results.jsx';
+import {Results} from '../../src/components/Results.js';
 
 import {expect} from 'chai';
 
 describe('Results', () => {
+    //before(() => {
+    //    const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
+    //    const win = doc.defaultView;
+    //
+    //    global.document = doc;
+    //    global.window = win;
+    //
+    //    Object.keys(window).forEach((key) => {
+    //        if (!(key in global)) {
+    //            global[key] = window[key];
+    //        }
+    //    });
+    //});
+
     it('renders entries with vote counts or zero', () => {
         const pair = List.of('Trainspotting', '28 Days Later');
         const tally = Map({'Trainspotting': 5});
